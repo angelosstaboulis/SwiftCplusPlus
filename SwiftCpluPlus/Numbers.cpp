@@ -29,6 +29,10 @@ int* Numbers::getArrayOfInt(){
     return numbers;
 }
 char** Numbers::getArrayOfStrings(){
-    static char *arr[4] = {(char*)"Angelos",(char*) "Theodoros", (char*)"Angeliki",(char*)"John"};
+    char **arr = (char**) malloc(4*sizeof(char*));
+    arr[0]=(char*)"Angelos";
+    arr[1]=(char*)"Theodoros";
+    arr[2]=(char*)"John";
+    arr[3]=(char*)"Angeliki";
     return arr;
 }
